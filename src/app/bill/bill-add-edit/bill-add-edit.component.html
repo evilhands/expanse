@@ -1,0 +1,27 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>
+        Store
+      </mat-label>
+      <input type="text" matInput formControlName="store" />
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>
+        Category
+      </mat-label>
+      <input type="text" matInput formControlName="category" />
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>
+        Amount
+      </mat-label>
+      <input type="text" matInput formControlName="amount" />
+    </mat-form-field>
+  </p>
+  <button type="submit" [disabled]="!form.valid">Submit</button>
+</form>
