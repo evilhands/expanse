@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {ReactiveFormsModule}from '@angular/forms';
 import { MaterialDesignModule } from './material-design.module';
+import {HttpClientModule} from '@angular/common/http';
+
 import { BillAddEditComponent } from './bill/bill-add-edit/bill-add-edit.component';
 import { BillListComponent } from './bill/bill-list/bill-list.component';
 import { BillComponent } from './bill/bill.component';
@@ -22,7 +24,9 @@ import { BillComponent } from './bill/bill.component';
       AppRoutingModule,
       BrowserAnimationsModule,
       ReactiveFormsModule, 
-      MaterialDesignModule
+      MaterialDesignModule,
+      HttpClientModule
+
    ],
    providers: [],
    bootstrap: [

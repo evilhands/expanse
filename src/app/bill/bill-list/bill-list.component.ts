@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Host } from '@angular/core';
 import { BillStoreService } from '../service/bill-store.service';
 
 @Component({
@@ -11,6 +11,7 @@ export class BillListComponent implements OnInit {
   constructor(public billStore:BillStoreService) { }
 
   ngOnInit(): void {
+ 
   }
 
 }

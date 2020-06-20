@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+
+[
+   {
+      "store": "Spar",
+      "category": "Food",
+      "amount": 12.5
+},
+{
+      "store": "Spar",
+      "category": "Food",
+      "amount": 12.5
+}
+]

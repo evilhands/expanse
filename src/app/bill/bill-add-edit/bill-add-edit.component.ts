@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Host } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { BillStoreService } from '../service/bill-store.service';
 
@@ -6,6 +6,7 @@ import { BillStoreService } from '../service/bill-store.service';
   selector: 'app-bill-add-edit',
   templateUrl: './bill-add-edit.component.html',
   styleUrls: ['./bill-add-edit.component.sass'],
+  providers: [BillStoreService]
 })
 export class BillAddEditComponent implements OnInit {
   public form: FormGroup;
